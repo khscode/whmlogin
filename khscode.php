@@ -35,7 +35,7 @@ $password = trim(fgets(STDIN));
 	}
 	
 	$hasiltruenya = logintrue($trueurl,$data);
-	if(preg_match('#You must specify a username to log in.#', $hasiltruenya)) {
+	if(preg_match('#The login is invalid.#', $hasiltruenya)) {
 		echo "The Login Is Invalid";
 	} else {
 		echo "Login Successfull. Redirecting...";
